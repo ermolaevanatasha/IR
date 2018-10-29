@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Результаты поиска</title>
+  {% include '_bootstrap.html' %}
+</head>
+<body>
+  <h2>ТОП-5 объявлений по запросу <i>{{query}}</i>:</h2>
+  <div class="panel panel-default">
+    <table class="table table">
+      <tbody>
+        <tr>
+          <td>
+            <ul class="list-group">
+              {% for res in results %}
+                <li class="list-group-item">
+                  {{ res }}
+                </li>
+              {% endfor %}
+            </ul>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
