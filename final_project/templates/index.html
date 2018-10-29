@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Главная страница</title>
+  {% include '_bootstrap.html' %}
+</head>
+<body class="index">
+  <div class="jumbotron">
+    <div class="container">
+      <h1>Здравствуйте!</h1>
+      <h3>Вы находитесь на странице поиска по корпусу объявлений о продаже компьютерных игр и приставок с сайта
+        <a href="https://www.avito.ru" target="_blank">
+          <i>Авито</i>
+        </a></h3>
+      <p>Введите запрос, чтобы начать поиск:</p>
+      <form action="/" class="form-inline">
+        <div class="form-group">
+          <input type="text" name="query" class="form-control" placeholder="Ваш поисковый запрос" autofocus>
+          <button type="submit" class="btn btn-primary">Искать</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
